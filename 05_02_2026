@@ -1,0 +1,10 @@
+a = [11,50,33,20]
+min = a[0]
+maxi= a[0]
+for i in a[1:]:   #we discard the extra loop for index 0.
+    if i < min:
+        min = i
+    if i> maxi:
+        maxi = i
+print("max:", maxi)
+print("min:", min)
