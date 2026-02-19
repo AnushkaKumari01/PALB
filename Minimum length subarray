@@ -1,0 +1,18 @@
+arr = [1,4,45,6,0,19]
+x = 51
+my_len = len(arr)+1
+for i in range(len(arr)):
+  my_sum = 0
+  for j in range(i,len(arr)):
+    my_sum = my_sum + arr[j]
+    if my_sum > x:
+      new_len = j-i+1
+      if new_len < my_len:
+        my_len = new_len
+      break
+if my_len == len(arr)+1:
+  print(0)
+else:
+  print("min length subarray:",my_len)        
+
+    
